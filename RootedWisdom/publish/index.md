@@ -7,4 +7,4 @@ permalink:          # explicit URL if you want to control it
 date:
 status: draft             # draft | published
 ---
-This will be the home page
+This will be the home page!
