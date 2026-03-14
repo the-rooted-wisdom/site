@@ -1,9 +1,9 @@
 ---
 title:
-description:        # for SEO meta description
-content_type:       # page | event | retreat
-layout:             # which 11ty template to use
-permalink:          # explicit URL if you want to control it
+description:
+content_type:
+layout: layouts/base.njk
+permalink:
 date:
-status:  draft           # draft | published
+status: draft
 ---

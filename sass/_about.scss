@@ -1,0 +1,518 @@
+// ═══════════════════════════════════════════════════════
+// THE ROOTED WISDOM · _about.scss
+// ═══════════════════════════════════════════════════════
+
+@use 'variables' as *;
+
+
+// ── Shared utilities ────────────────────────────────────
+
+.eyebrow {
+  font-size: 0.62rem;
+  letter-spacing: 0.4em;
+  text-transform: uppercase;
+  color: $blue;
+  max-width: none;
+  margin-bottom: 0.75rem;
+}
+
+.orn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.9rem;
+  margin: 1.2rem auto;
+
+  &__line {
+    display: block;
+    width: 70px;
+    height: 1px;
+    background: linear-gradient(to right, transparent, rgba(184,124,30,0.35), transparent);
+  }
+
+  &__dia {
+    display: block;
+    width: 5px;
+    height: 5px;
+    background: $gold;
+    transform: rotate(45deg);
+    flex-shrink: 0;
+  }
+}
+
+.btn {
+  display: inline-block;
+  font-size: 0.68rem;
+  font-weight: 500;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  padding: 0.8rem 2rem;
+  border-radius: 3px;
+  text-decoration: none;
+  transition: background 0.2s, color 0.2s, border-color 0.2s;
+
+  &--primary {
+    background: $rust;
+    color: #fff;
+
+    &:hover {
+      background: $rust-light;
+      color: #fff;
+    }
+  }
+
+  &--ghost {
+    background: transparent;
+    color: $bark;
+    border: 1px solid rgba(59, 32, 16, 0.3);
+
+    &:hover {
+      border-color: $bark;
+      color: $bark;
+    }
+  }
+}
+
+
+// ── Hero ────────────────────────────────────────────────
+
+.about-hero {
+  position: relative;
+  padding: 7rem 2.5rem 5rem;
+  text-align: center;
+  overflow: hidden;
+  background: $parchment;
+
+  &__pools {
+    position: absolute;
+    inset: 0;
+    pointer-events: none;
+  }
+
+  &__pool {
+    position: absolute;
+    border-radius: 50%;
+    filter: blur(55px);
+
+    &--1 { width: 500px; height: 350px; background: rgba(122,174,200,0.18); top: -15%; left: -10%; }
+    &--2 { width: 420px; height: 280px; background: rgba(201,136,42,0.15); bottom: -10%; right: -8%; }
+    &--3 { width: 350px; height: 250px; background: rgba(91,138,170,0.12); top: 40%; right: -5%; }
+  }
+
+  &__content {
+    position: relative;
+    z-index: 1;
+    max-width: 680px;
+    margin-inline: auto;
+
+    h1 {
+      font-size: clamp(2.6rem, 6vw, 4.5rem);
+      margin-bottom: 0.1em;
+
+      em {
+        font-style: italic;
+        color: $rust;
+      }
+    }
+  }
+
+  &__sub {
+    font-family: $font-display;
+    font-size: 1.15rem;
+    font-style: italic;
+    color: $mid-text;
+    max-width: none;
+    margin-bottom: 1.5rem;
+  }
+
+  &__body {
+    font-size: 0.95rem;
+    color: $mid-text;
+    max-width: 520px;
+    margin-inline: auto;
+    line-height: 1.85;
+  }
+}
+
+
+// ── Portrait split ───────────────────────────────────────
+
+.about-portrait {
+  padding: 5rem 0 4rem;
+
+  &__inner {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 5rem;
+    align-items: center;
+
+    @media (max-width: 760px) {
+      grid-template-columns: 1fr;
+      gap: 3rem;
+    }
+  }
+
+  &__img {
+    position: relative;
+
+    @media (max-width: 760px) {
+      max-width: 360px;
+      margin-inline: auto;
+    }
+  }
+
+  &__frame {
+    width: 100%;
+    aspect-ratio: 3 / 4;
+    overflow: hidden;
+    border-radius: 2px;
+    background: $parchment-deep;
+
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: center top;
+      display: block;
+    }
+  }
+
+  &__badge {
+    position: absolute;
+    bottom: -1.25rem;
+    right: -1.25rem;
+    background: $bark;
+    color: $dark-cream;
+    padding: 1rem 1.4rem;
+    font-size: 0.6rem;
+    letter-spacing: 0.28em;
+    text-transform: uppercase;
+    line-height: 2;
+    border-radius: 2px;
+    z-index: 2;
+
+    @media (max-width: 760px) {
+      right: 0;
+    }
+  }
+
+  &__text {
+    h2 {
+      font-size: clamp(1.8rem, 3.5vw, 2.8rem);
+      margin-bottom: 1.2rem;
+
+      em {
+        font-style: italic;
+        color: $rust;
+      }
+    }
+
+    p {
+      font-size: 0.9rem;
+      color: $mid-text;
+      line-height: 1.85;
+      max-width: none;
+      margin-bottom: 1rem;
+    }
+  }
+}
+
+.about-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-top: 1.5rem;
+
+  li {
+    font-size: 0.6rem;
+    letter-spacing: 0.22em;
+    text-transform: uppercase;
+    color: $blue;
+    border: 1px solid rgba(74, 122, 155, 0.35);
+    padding: 0.3rem 0.75rem;
+    border-radius: 2px;
+  }
+}
+
+
+// ── Divider ─────────────────────────────────────────────
+
+.about-divider {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+  padding-block: 1rem 4rem;
+
+  &__line {
+    flex: 1;
+    height: 1px;
+    background: rgba(59,32,16,0.1);
+  }
+
+  &__motif {
+    font-size: 1rem;
+    color: $gold;
+    opacity: 0.5;
+  }
+}
+
+
+// ── Mission pillars ──────────────────────────────────────
+
+.about-mission {
+  position: relative;
+  padding: 5rem 0;
+  background: $parchment-warm;
+  overflow: hidden;
+
+  &__pool {
+    position: absolute;
+    width: 600px;
+    height: 400px;
+    background: rgba(122,174,200,0.2);
+    filter: blur(60px);
+    border-radius: 50%;
+    top: -20%;
+    right: -15%;
+    pointer-events: none;
+  }
+
+  &__header {
+    text-align: center;
+    margin-bottom: 3.5rem;
+    position: relative;
+    z-index: 1;
+
+    h2 {
+      font-size: clamp(1.8rem, 4vw, 3rem);
+      em { font-style: italic; color: $rust; }
+    }
+
+    p {
+      font-size: 0.9rem;
+      color: $mid-text;
+      max-width: 520px;
+      margin-inline: auto;
+    }
+  }
+}
+
+.about-pillars {
+  position: relative;
+  z-index: 1;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.5rem;
+
+  @media (max-width: 700px) {
+    grid-template-columns: 1fr;
+  }
+}
+
+.about-pillar {
+  padding: 2rem 1.75rem;
+  background: rgba(255,252,245,0.55);
+  border: 1px solid rgba(139,90,30,0.1);
+  border-radius: 2px;
+
+  &__icon {
+    width: 32px;
+    height: 32px;
+    margin-bottom: 1rem;
+    display: block;
+  }
+
+  &__title {
+    font-family: $font-display;
+    font-size: 1.25rem;
+    font-weight: 500;
+    color: $bark;
+    margin-bottom: 0.5rem;
+    max-width: none;
+  }
+
+  &__body {
+    font-size: 0.84rem;
+    color: $mid-text;
+    line-height: 1.8;
+    max-width: none;
+
+    em { font-style: italic; }
+  }
+}
+
+
+// ── Roots (dark section) ─────────────────────────────────
+
+.about-roots {
+  position: relative;
+  background: $bark;
+  padding: 5rem 0;
+  overflow: hidden;
+
+  &__pool {
+    position: absolute;
+    border-radius: 50%;
+    filter: blur(60px);
+    pointer-events: none;
+
+    &--1 { width: 500px; height: 350px; background: rgba(122,174,200,0.1); top: -10%; left: -10%; }
+    &--2 { width: 400px; height: 300px; background: rgba(184,124,30,0.12); bottom: -5%; right: -5%; }
+  }
+
+  &__inner {
+    position: relative;
+    z-index: 1;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 4rem;
+    align-items: center;
+
+    @media (max-width: 760px) {
+      grid-template-columns: 1fr;
+      gap: 3rem;
+    }
+  }
+
+  &__eyebrow { color: $blue-light; }
+
+  &__text {
+    h2 {
+      font-size: clamp(1.8rem, 3.5vw, 2.8rem);
+      color: $dark-cream;
+      margin-bottom: 1.2rem;
+
+      em {
+        font-style: italic;
+        color: $rust-light;
+      }
+    }
+  }
+
+  &__body {
+    font-size: 0.9rem;
+    color: rgba(245,240,232,0.7);
+    line-height: 1.85;
+    max-width: none;
+  }
+
+  &__list {
+    margin-top: 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.85rem;
+
+    li {
+      position: relative;
+      padding-left: 1.25rem;
+      font-size: 0.88rem;
+      color: rgba(245,240,232,0.7);
+      line-height: 1.7;
+
+      &::before {
+        content: '';
+        position: absolute;
+        left: 0;
+        top: 0.58em;
+        width: 5px;
+        height: 5px;
+        background: $gold;
+        transform: rotate(45deg);
+      }
+    }
+  }
+
+  &__quote {
+    position: relative;
+    padding: 2.5rem 2rem 2rem;
+    background: rgba(245,240,232,0.05);
+    border: 1px solid rgba(245,240,232,0.12);
+    border-radius: 2px;
+
+    &::before {
+      content: '\201C';
+      font-family: $font-display;
+      font-size: 5rem;
+      color: $gold;
+      opacity: 0.3;
+      position: absolute;
+      top: -0.6rem;
+      left: 1.5rem;
+      line-height: 1;
+    }
+
+    p {
+      font-family: $font-display;
+      font-size: 1.4rem;
+      font-style: italic;
+      font-weight: 300;
+      color: $dark-cream;
+      line-height: 1.55;
+      max-width: none;
+    }
+
+    cite {
+      display: block;
+      margin-top: 1.25rem;
+      font-size: 0.62rem;
+      letter-spacing: 0.28em;
+      text-transform: uppercase;
+      color: rgba(245,240,232,0.4);
+      font-style: normal;
+    }
+  }
+}
+
+
+// ── CTA ─────────────────────────────────────────────────
+
+.about-cta {
+  position: relative;
+  padding: 5rem 0;
+  background: $parchment;
+  overflow: hidden;
+  text-align: center;
+
+  &__pool {
+    position: absolute;
+    border-radius: 50%;
+    filter: blur(55px);
+    pointer-events: none;
+
+    &--1 { width: 500px; height: 350px; background: rgba(201,136,42,0.15); bottom: -20%; left: -10%; }
+    &--2 { width: 400px; height: 280px; background: rgba(122,174,200,0.14); top: -10%; right: -5%; }
+  }
+
+  &__inner {
+    position: relative;
+    z-index: 1;
+    max-width: 560px;
+    margin-inline: auto;
+    text-align: center;
+
+    h2 {
+      font-size: clamp(1.8rem, 4vw, 3rem);
+      margin-bottom: 1rem;
+
+      em {
+        font-style: italic;
+        color: $rust;
+      }
+    }
+
+    p {
+      font-size: 0.95rem;
+      color: $mid-text;
+      line-height: 1.85;
+      margin-inline: auto;
+      margin-bottom: 2.5rem;
+    }
+  }
+
+  &__actions {
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+}

@@ -1,0 +1,205 @@
+// ═══════════════════════════════════════════════════════
+// WILLOW & SAGE · zine.scss
+// Loaded in addition to styles.scss on zine: true pages
+// ═══════════════════════════════════════════════════════
+
+
+// ── Zine Variables ───────────────────────────────────
+
+$z-ink:           #1a1025;
+$z-dust:          #f5f0e8;
+$z-mist:          #e8e4f0;
+$z-lavender:      #c4b0d4;
+$z-lavender-deep: #9b85b5;
+$z-sage:          #8aad8e;
+$z-sage-deep:     #5c8561;
+$z-gold:          #c9a84c;
+$z-gold-light:    #e8d49a;
+$z-blush:         #e8c4c4;
+$z-deep:          #3d2a5a;
+
+$z-font-display: 'Cormorant Garamond', serif;
+$z-font-ui:      'Josefin Sans', sans-serif;
+
+$z-grad-header: linear-gradient(135deg, #3d2a5a 0%, #2a1a40 60%, #1a0f2e 100%);
+$z-grad-card:   linear-gradient(135deg, #e8e4f0 0%, #ffffff 100%);
+
+
+// ── Font import (Josefin Sans — zine only) ───────────
+// Add this to base.njk head when zine: true
+// <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@200;300;400;600&display=swap" rel="stylesheet">
+
+
+// ── Zine Body Overrides ──────────────────────────────
+
+body {
+  background: $z-dust;
+  color: $z-ink;
+  font-family: $z-font-ui;
+}
+
+a {
+  color: $z-lavender-deep;
+
+  &:hover {
+    color: $z-sage-deep;
+  }
+}
+
+h1, h2, h3, h4, h5, h6 {
+  color: $z-deep;
+}
+
+
+// ── Zine Layout ──────────────────────────────────────
+
+.zine-wrapper {
+  max-width: 860px;
+  margin-inline: auto;
+  padding-inline: 2.5rem;
+
+  @media (max-width: 600px) {
+    padding-inline: 1.25rem;
+  }
+}
+
+
+// ── Zine Header ──────────────────────────────────────
+
+.zine-header {
+  background: $z-grad-header;
+  color: $z-dust;
+  text-align: center;
+  padding: 5rem 2rem 4rem;
+  position: relative;
+  overflow: hidden;
+
+  // Subtle radial glow
+  &::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: radial-gradient(ellipse at 50% 0%, rgba(196, 176, 212, 0.25) 0%, transparent 65%);
+    pointer-events: none;
+  }
+}
+
+.zine-masthead {
+  font-family: $z-font-ui;
+  font-size: 0.65rem;
+  font-weight: 400;
+  letter-spacing: 0.4em;
+  text-transform: uppercase;
+  color: $z-lavender;
+  margin-bottom: 1rem;
+}
+
+.zine-issue {
+  font-family: $z-font-ui;
+  font-size: 0.65rem;
+  letter-spacing: 0.3em;
+  text-transform: uppercase;
+  color: $z-gold;
+  margin-bottom: 1.5rem;
+}
+
+.zine-title {
+  font-family: $z-font-display;
+  font-size: clamp(2.5rem, 6vw, 4.5rem);
+  font-weight: 300;
+  line-height: 1.1;
+  color: $z-dust;
+  margin-bottom: 1rem;
+}
+
+.zine-subtitle {
+  font-family: $z-font-display;
+  font-size: 1.15rem;
+  font-style: italic;
+  font-weight: 300;
+  color: $z-lavender;
+}
+
+
+// ── Zine Body ────────────────────────────────────────
+
+.zine-body {
+  padding-block: 4rem;
+
+  p {
+    font-size: 1rem;
+    line-height: 1.85;
+    color: $z-ink;
+    max-width: 65ch;
+    margin-bottom: 1.5rem;
+  }
+
+  h2 {
+    font-family: $z-font-display;
+    font-size: clamp(1.75rem, 3vw, 2.5rem);
+    color: $z-deep;
+    margin-block: 3rem 1rem;
+  }
+
+  h3 {
+    font-family: $z-font-ui;
+    font-size: 0.7rem;
+    font-weight: 600;
+    letter-spacing: 0.3em;
+    text-transform: uppercase;
+    color: $z-lavender-deep;
+    margin-block: 2.5rem 0.75rem;
+  }
+
+  blockquote {
+    border-left: 2px solid $z-lavender;
+    margin-block: 2.5rem;
+    padding-left: 1.5rem;
+
+    p {
+      font-family: $z-font-display;
+      font-size: 1.35rem;
+      font-style: italic;
+      color: $z-deep;
+    }
+  }
+}
+
+
+// ── Zine Pagination ──────────────────────────────────
+
+.zine-pagination {
+  display: flex;
+  justify-content: space-between;
+  padding-block: 3rem;
+  border-top: 1px solid $z-mist;
+  gap: 2rem;
+
+  a {
+    display: flex;
+    flex-direction: column;
+    gap: 0.25rem;
+    text-decoration: none;
+
+    &.zine-next {
+      text-align: right;
+    }
+  }
+
+  .nav-label {
+    font-size: 0.62rem;
+    letter-spacing: 0.3em;
+    text-transform: uppercase;
+    color: $z-lavender-deep;
+  }
+
+  .nav-title {
+    font-family: $z-font-display;
+    font-size: 1.1rem;
+    color: $z-deep;
+
+    &:hover {
+      color: $z-sage-deep;
+    }
+  }
+}
