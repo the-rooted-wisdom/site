@@ -1,10 +1,53 @@
 ---
-title: About
+title: About Dara Pressley & The Rooted Wisdom
 description: The Rooted Wisdom is a living herbal school founded by herbalist and spiritual educator Dara Pressley — rooted in ancestral traditions, the Pacific Northwest, and an unshakeable belief that the plants remember what we have forgotten.
+ogimage: /assets/img/dara-portrait.jpg
 layout: layouts/base.njk
 permalink: /about/
 status: published
 ---
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Person",
+      "name": "Dara Pressley",
+      "jobTitle": "Herbalist & Spiritual Educator",
+      "description": "Dara Pressley is an herbalist, spiritual educator, and founder of The Rooted Wisdom — a living herbal school rooted in ancestral traditions and the Pacific Northwest.",
+      "url": "https://therootedwisdom.com/about/",
+      "image": "https://therootedwisdom.com/assets/img/dara-portrait.jpg",
+      "sameAs": [
+        "https://www.instagram.com/therootedwisdomherbal/"
+      ],
+      "worksFor": {
+        "@type": "Organization",
+        "name": "The Rooted Wisdom",
+        "url": "https://therootedwisdom.com"
+      }
+    },
+    {
+      "@type": "EducationalOrganization",
+      "name": "The Rooted Wisdom",
+      "description": "A living herbal school offering apprenticeships, workshops, and courses in ancestral herbalism, spiritual practice, and earth-based learning.",
+      "url": "https://therootedwisdom.com",
+      "founder": {
+        "@type": "Person",
+        "name": "Dara Pressley"
+      },
+      "areaServed": "Pacific Northwest",
+      "knowsAbout": [
+        "Herbalism",
+        "Ancestral wisdom",
+        "Spiritual practice",
+        "Plant medicine",
+        "Earth-based learning"
+      ]
+    }
+  ]
+}
+</script>
 
 <section class="about-hero">
 <div class="about-hero__pools" aria-hidden="true">

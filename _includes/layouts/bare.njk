@@ -31,22 +31,15 @@
   <!-- Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  {% if zine %}
-  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=Josefin+Sans:wght@200;300;400;600&display=swap" rel="stylesheet">
-  {% else %}
-  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=Jost:wght@300;400;500&display=swap" rel="stylesheet">
-  {% endif %}
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400;1,500&family=Jost:wght@300;400;500&display=swap" rel="stylesheet">
 
   <!-- Canonical -->
   <link rel="canonical" href="{{ site.url }}{{ page.url }}">
 
-  <!-- Styles -->
+  <!-- Global styles (resets, fonts, etc.) -->
   <link rel="stylesheet" href="/assets/css/styles.css">
-  {% if zine %}
-  <link rel="stylesheet" href="/assets/css/zine.css">
-  {% endif %}
 
-  <!-- Page-scoped styles -->
+  <!-- Page-level styles injected by the template -->
   {% if pageStyles %}
   <style>{{ pageStyles }}</style>
   {% endif %}
@@ -54,23 +47,7 @@
 </head>
 <body>
 
-  {% include "partials/nav.njk" %}
-
-  <main>
-    {{ content | safe }}
-  </main>
-
-  {% include "partials/footer.njk" %}
-
-  <script>
-    const toggle = document.querySelector('.nav-toggle');
-    const menu = document.getElementById('mobile-menu');
-    toggle.addEventListener('click', () => {
-      const isOpen = !menu.hidden;
-      menu.hidden = isOpen;
-      toggle.setAttribute('aria-expanded', !isOpen);
-    });
-  </script>
+  {{ content | safe }}
 
 </body>
 </html>

@@ -1,8 +1,9 @@
 ---
-title: Home
-description: A living herbal school rooted in spirit, ancestors, and earth.
+title: The Rooted Wisdom
+description: A living herbal school rooted in spirit, ancestors, and earth — where plant medicine, ancestral knowledge, and sacred practice come together.
 layout: layouts/base.njk
 bodyClass: home
+ogtitle: The Rooted Wisdom — A Living Herbal School
 ---
 
 <!-- HERO -->
@@ -262,7 +263,7 @@ bodyClass: home
     <p class="section-label">Stay Close</p>
     <h2 class="newsletter-title">What's<br><em>Stirring Now</em></h2>
     <p class="newsletter-body">Seasonal plant notes, new monographs, ceremony invitations, and what's moving in the school — delivered to your inbox when there's something worth saying.</p>
-    <form class="newsletter-form" action="https://buttondown.email/api/emails/embed-subscribe/therootedwisdom" method="post" target="_blank">
+    <form class="newsletter-form" action="https://buttondown.com/api/emails/embed-subscribe/therootedwisdom" method="post" target="_blank">
       <div class="newsletter-fields">
         <div class="newsletter-field">
           <label for="newsletter-name" class="sr-only">Your name</label>

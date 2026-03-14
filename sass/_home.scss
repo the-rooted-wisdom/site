@@ -1096,6 +1096,7 @@ body::before {
   background: $rust;
   color: #fff;
   border: none;
+  border-left: 1px solid rgba(139, 90, 30, 0.35);
   padding: 0.85rem 1.8rem;
   font-family: $font-body;
   font-size: 0.72rem;

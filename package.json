@@ -4,11 +4,12 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "watch:sass": "sass --watch sass:assets/css",
-    "build:sass": "sass sass:assets/css",
+    "watch:sass": "sass --watch sass:assets/css --style=expanded",
+    "watch:sass:site": "sass --watch sass:_site/assets/css --style=expanded --no-source-map",
+    "build:sass": "sass sass:assets/css --style=compressed",
     "watch:eleventy": "npx @11ty/eleventy --config=.eleventy.js --serve",
     "build:eleventy": "npx @11ty/eleventy --config=.eleventy.js",
-    "start": "npm-run-all build:sass --parallel watch:*",
+    "start": "npm-run-all build:sass --parallel watch:eleventy watch:sass:site",
     "build": "npm-run-all build:*"
   },
   "keywords": [],
