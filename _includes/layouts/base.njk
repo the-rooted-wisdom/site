@@ -48,7 +48,7 @@
 
   <!-- Page-scoped styles -->
   {% if pageStyles %}
-  <style>{{ pageStyles }}</style>
+  <style>{{ pageStyles | safe }}</style>
   {% endif %}
 
 </head>

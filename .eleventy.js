@@ -22,7 +22,25 @@ module.exports = function(eleventyConfig) {
 
   eleventyConfig.setLibrary("md", markdownLib);
 
+  // ── Collections ──────────────────────────────────────
+
+  // Workshops: all pages under /workshops/ except the index
+  eleventyConfig.addCollection("workshops", function(collectionApi) {
+    return collectionApi.getAll().filter(item => {
+      return item.url &&
+        item.url.startsWith("/workshops/") &&
+        item.url !== "/workshops/";
+    }).sort((a, b) => {
+      // Sort by eventDate ascending if present, otherwise by date
+      const aDate = a.data.eventDate ? new Date(a.data.eventDate) : a.date;
+      const bDate = b.data.eventDate ? new Date(b.data.eventDate) : b.date;
+      return aDate - bDate;
+    });
+  });
+
   return {
+    markdownTemplateEngine: "njk",
+    htmlTemplateEngine: "njk",
     dir: {
       input: "RootedWisdom/publish",
       includes: "../../_includes",

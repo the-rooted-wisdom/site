@@ -394,11 +394,12 @@ pageStyles: |
   }
 
   .host-photo {
-    width: 100px;
-    height: 140px;
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
     object-fit: cover;
-    object-position: center top;
-    border: 1px solid rgba(184,147,62,0.25);
+    object-position: center center;
+    border: 2px solid rgba(184,147,62,0.35);
     margin: 0 auto 1.25rem;
     display: block;
     filter: sepia(15%) contrast(1.05);
@@ -639,6 +640,9 @@ pageStyles: |
 <p class="overlay-label">New Orleans · Oct 29 – Nov 1, 2026</p>
 <h2 class="overlay-title">Count Me <em>In</em></h2>
 <p class="overlay-desc">Spaces are limited and held with care. Share your details and we'll be in touch with everything you need to know.</p>
+<form id="interest-form" name="nola-retreat-interest" method="POST" data-netlify="true" netlify-honeypot="bot-field">
+<input type="hidden" name="form-name" value="nola-retreat-interest">
+<p class="form-group" style="display:none;"><label>Don't fill this out: <input name="bot-field"></label></p>
 <div class="form-group">
 <label for="interest-name">Your Name</label>
 <input type="text" id="interest-name" name="name" placeholder="Full name" autocomplete="name" required>
@@ -647,8 +651,9 @@ pageStyles: |
 <label for="interest-email">Email Address</label>
 <input type="email" id="interest-email" name="email" placeholder="your@email.com" autocomplete="email" required>
 </div>
-<button class="btn-primary form-submit" id="interest-submit">Express My Interest</button>
+<button type="submit" class="btn-primary form-submit" id="interest-submit">Express My Interest</button>
 <p class="form-fine">Your information is kept private and never shared.</p>
+</form>
 </div>
 <div class="form-success" id="form-success">
 <p class="success-icon">✦</p>
@@ -736,19 +741,19 @@ pageStyles: |
 <h2 class="section-title">Led by <em>Dara, Julie &amp; Ericka</em></h2>
 <div class="hosts-grid">
 <div class="host-card">
-<img class="host-photo" src="https://framerusercontent.com/images/2R11lrDxKKBZcmEHebBZn2owyI.jpg?width=200&height=300" alt="Dara Pressley" width="100" height="140">
+<img class="host-photo" src="https://framerusercontent.com/images/2R11lrDxKKBZcmEHebBZn2owyI.jpg?width=200&height=300" alt="Dara Pressley" width="120" height="120">
 <p class="host-name">Dara Pressley</p>
 <p class="host-title">Founder, The Rooted Wisdom</p>
 <p class="host-bio">Herbalist, educator, and the founder of The Rooted Wisdom — a living herbal school rooted in spirit, ancestors, and earth.</p>
 </div>
 <div class="host-card">
-<img class="host-photo" src="https://framerusercontent.com/images/moFHBmrWryZ3PehFDNO5tP9zEj0.jpeg?width=200&height=300" alt="Julie Moody-Freeman" width="100" height="140">
+<img class="host-photo" src="https://framerusercontent.com/images/moFHBmrWryZ3PehFDNO5tP9zEj0.jpeg?width=200&height=300" alt="Julie Moody-Freeman" width="120" height="120">
 <p class="host-name">Julie Moody-Freeman</p>
 <p class="host-title">Spiritual Herbalist &amp; Galactic Astrologer</p>
 <p class="host-bio">Julie uses Spiritual Herbalism and Galactic Astrology to teach people how to journey with plants and astrological stars as allies.</p>
 </div>
 <div class="host-card">
-<img class="host-photo" src="https://framerusercontent.com/images/Frs2K5HClm6NARQBtHmn2FGjLC0.jpeg?width=200&height=300" alt="Ericka Mabrie" width="100" height="140">
+<img class="host-photo" src="https://framerusercontent.com/images/Frs2K5HClm6NARQBtHmn2FGjLC0.jpeg?width=200&height=300" alt="Ericka Mabrie" width="120" height="120">
 <p class="host-name">Ericka Mabrie</p>
 <p class="host-title">Healer &amp; Baker</p>
 <p class="host-bio">Earth tender, spiritual herbalist, baker and carrier of faery medicine. Her practice is rooted in animism, ancestral wisdom and the belief that whimsy is power.</p>
@@ -773,12 +778,20 @@ pageStyles: |
 </div>
 </section>
 
+<!-- Netlify build-time scanner — must be a real HTML form in the document -->
+<form name="nola-retreat-interest" netlify netlify-honeypot="bot-field" hidden>
+<input type="text" name="name">
+<input type="email" name="email">
+<input name="bot-field">
+</form>
+
 <!-- OVERLAY SCRIPT -->
 <script>
 (function() {
   var overlay = document.getElementById('interest-overlay');
   var closeBtn = document.getElementById('overlay-close');
-  var form = document.getElementById('overlay-form');
+  var formWrap = document.getElementById('overlay-form');
+  var netlifyForm = document.getElementById('interest-form');
   var success = document.getElementById('form-success');
   var submitBtn = document.getElementById('interest-submit');
 
@@ -807,8 +820,9 @@ pageStyles: |
     if (e.key === 'Escape') closeOverlay();
   });
 
-  submitBtn.addEventListener('click', function(e) {
+  netlifyForm.addEventListener('submit', function(e) {
     e.preventDefault();
+
     var name = document.getElementById('interest-name').value.trim();
     var email = document.getElementById('interest-email').value.trim();
     if (!name || !email) return;
@@ -816,12 +830,19 @@ pageStyles: |
     submitBtn.textContent = 'Sending…';
     submitBtn.disabled = true;
 
-    /* TODO: wire to your form handler (Buttondown, Netlify Forms, etc.) */
-    /* For now, simulate success after a short delay */
-    setTimeout(function() {
-      form.classList.add('is-hidden');
+    fetch('/', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
+      body: new URLSearchParams(new FormData(netlifyForm)).toString()
+    })
+    .then(function() {
+      formWrap.classList.add('is-hidden');
       success.classList.add('is-visible');
-    }, 800);
+    })
+    .catch(function() {
+      submitBtn.textContent = 'Something went wrong — try again';
+      submitBtn.disabled = false;
+    });
   });
 })();
 </script>
