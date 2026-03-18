@@ -12,7 +12,6 @@ By participating in **The Rooted Wisdom website and community portal**, you agre
 
 Participation in the community indicates agreement with these guidelines.
 
----
 
 ## 1. Our Community Values
 
@@ -33,7 +32,6 @@ Our practices are rooted in respect for plants, ecosystems, and ancestral knowle
 **Community Over Competition**  
 We support each other’s growth rather than seeking status or authority within the space.
 
----
 
 ## 2. Expected Behavior
 
@@ -46,7 +44,6 @@ Members are expected to:
 - Be open to learning from others  
 - Respect the privacy of other members and conversations within the community  
 
----
 
 ## 3. Unacceptable Behavior
 
@@ -75,7 +72,6 @@ The following behaviors are not allowed within the community:
 - Misrepresenting cultural traditions  
 - Claiming authority over traditions that are not yours to represent  
 
----
 
 ## 4. Community Content and Privacy
 
@@ -87,7 +83,7 @@ Please remember:
 - Do not share screenshots or repost member discussions outside the community without permission.  
 - Avoid sharing sensitive personal information.
 
----
+
 
 ## 5. Moderation
 
@@ -100,7 +96,6 @@ The Rooted Wisdom moderators may:
 
 **Moderation decisions are made at the discretion of The Rooted Wisdom team to maintain a respectful and safe learning environment.**
 
----
 
 ## 6. Herbal Safety Disclaimer
 
@@ -117,7 +112,6 @@ Members acknowledge that:
 
 The Rooted Wisdom does not assume responsibility for outcomes resulting from practices discussed within the community.
 
----
 
 ## 7. Educational Content and Intellectual Property
 
@@ -132,7 +126,6 @@ Members agree that:
 
 Members may reference what they learn within their own practice but should not reproduce proprietary materials or course content.
 
----
 
 ## 8. Reporting Concerns
 
@@ -140,7 +133,6 @@ If you experience or witness behavior that violates this Code of Conduct, please
 
 Reports will be handled thoughtfully and confidentially whenever possible.
 
----
 
 ## 9. A Living Community
 
@@ -148,7 +140,6 @@ Communities evolve as they grow. This Code of Conduct may be updated as The Root
 
 Members will be notified of significant updates.
 
----
 
 ## 10. Agreement
 
