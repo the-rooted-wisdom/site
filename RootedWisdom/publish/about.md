@@ -153,8 +153,8 @@ status: published
 <h2>This Is a Space for <em>Coming Home</em></h2>
 <p>Whether you&rsquo;re here for a workshop, a full apprenticeship, or simply a path that feels more sacred &mdash; we&rsquo;re glad you found us.</p>
 <div class="about-cta__actions">
-<a href="/apprenticeship/" class="btn btn--primary">Apply to the Apprenticeship</a>
-<a href="/join/" class="btn btn--ghost">Join the Community</a>
+<a href="/learn/apprentice/" class="btn btn--primary">Apply to the Apprenticeship</a>
+<a href="/learn/" class="btn btn--ghost">Join the Community</a>
 </div>
 </div>
 </section>

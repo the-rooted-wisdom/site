@@ -521,7 +521,7 @@ pageStyles: |
 <p class="fdn-pricing-tier">Monthly</p>
 <p class="fdn-pricing-amount"><sup>$</sup>100</p>
 <p class="fdn-pricing-period">per month &middot; cancel any time</p>
-<a href="#" class="fdn-pricing-cta fdn-cta-ghost">Enroll Monthly</a>
+<a href="https://therootedwisdom.com?msopen=/member/plans/m35cyuhrcz" class="fdn-pricing-cta fdn-cta-ghost">Enroll Monthly</a>
 </div>
 <div class="fdn-pricing-card featured">
 <div class="fdn-pricing-badge">Save 10%</div>

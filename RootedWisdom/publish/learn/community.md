@@ -451,7 +451,7 @@ pageStyles: |
 <p class="hc-pricing-amount"><sup>$</sup>15</p>
 <p class="hc-pricing-period">per month</p>
 <p class="hc-pricing-desc">Stay flexible and flow with the seasons. Pause or cancel any time.</p>
-<a href="#" class="hc-pricing-cta hc-cta-ghost">Join Monthly</a>
+<a href="https://therootedwisdom.com?msopen=/member/plans/c5pqm7rikd" class="hc-pricing-cta hc-cta-ghost">Join Monthly</a>
 </div>
 <div class="hc-pricing-card featured">
 <div class="hc-pricing-badge">Most Rooted</div>
@@ -459,14 +459,14 @@ pageStyles: |
 <p class="hc-pricing-amount"><sup>$</sup>150</p>
 <p class="hc-pricing-period">per year &middot; save $30</p>
 <p class="hc-pricing-desc">Commit to a full cycle. The deepest value for steady, seasonal practice.</p>
-<a href="#" class="hc-pricing-cta hc-cta-fill">Join Annually</a>
+<a href="https://therootedwisdom.com?msopen=/member/plans/k4ec7ni1sc" class="hc-pricing-cta hc-cta-fill">Join Annually</a>
 </div>
 <div class="hc-pricing-card" id="lifetime">
 <p class="hc-pricing-label">Lifetime</p>
 <p class="hc-pricing-amount" style="font-size:2.8rem;"><sup>$</sup>3,000</p>
 <p class="hc-pricing-period">one time &middot; planted forever</p>
 <p class="hc-pricing-desc">Plant yourself here permanently. Access everything, now and as it grows.</p>
-<a href="#" class="hc-pricing-cta hc-cta-ghost">Go Lifetime</a>
+<a href="https://therootedwisdom.com?msopen=/member/plans/fs6xbti6ey" class="hc-pricing-cta hc-cta-ghost">Go Lifetime</a>
 </div>
 </div>
 </section>

@@ -468,7 +468,7 @@ Lifetime access to The Rooted Wisdom Community
 <p class="appr-tuition-discount">A discount is available for payment in full. Year 2 tuition discussed upon invitation.</p>
 </div>
 <div class="appr-tuition-cta-wrap">
-<a href="#" class="btn-outline-light" style="display:block;text-align:center;">Apply Now</a>
+<a href="https://therootedwisdom.com?msopen=/member/plans/na7svvjauc" class="btn-outline-light" style="display:block;text-align:center;">Sign up Now</a>
 <p class="appr-tuition-note">Applications are open. We encourage early applications — enrollment is limited.</p>
 </div>
 </div>

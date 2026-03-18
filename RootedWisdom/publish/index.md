@@ -61,7 +61,7 @@ ogtitle: The Rooted Wisdom — A Living Herbal School
     <p class="hero-subtitle">Rooted in Spirit, Ancestors, and Earth</p>
     <p class="hero-desc">Where ancestral knowledge, plant medicine, and sacred practice come together — not as separate disciplines, but as one living system. For herbalists, healers, and seekers ready to go deeper.</p>
     <div class="hero-ctas">
-      <a href="/apprenticeship/" class="btn-primary">Apply to the Apprenticeship</a>
+      <a href="/learn/apprentice/" class="btn-primary">Apply to the Apprenticeship</a>
       <a href="/learn/" class="btn-blue-fill">Explore the Community</a>
     </div>
   </div>
@@ -103,14 +103,14 @@ ogtitle: The Rooted Wisdom — A Living Herbal School
     <p class="section-body">Every student arrives at a different door. We meet you where you are and walk forward together.</p>
   </div>
   <div class="paths-grid">
-    <a href="/learn/" class="path-card reveal">
+    <a href="/learn/community" class="path-card reveal">
       <div class="path-number" aria-hidden="true">01</div>
       <p class="path-tag">Entry Point</p>
       <h3 class="path-name">Community Membership</h3>
       <p class="path-desc">A living, growing space for plant people. Monthly teachings, seasonal rituals, and a community that takes the work seriously. This is where the roots go down.</p>
       <span class="path-link">Explore Community</span>
     </a>
-    <a href="/paths/foundations/" class="path-card path-card--featured reveal">
+    <a href="/learn/foundations/" class="path-card path-card--featured reveal">
       <span class="path-badge">Begin Here</span>
       <div class="path-number" aria-hidden="true">02</div>
       <p class="path-tag">Foundation Course</p>
@@ -118,7 +118,7 @@ ogtitle: The Rooted Wisdom — A Living Herbal School
       <p class="path-desc">A structured course in the language of plants — identification, energetics, preparation, and the ancestral frameworks that make herbalism whole. Practical, deep, and unhurried.</p>
       <span class="path-link">Learn More</span>
     </a>
-    <a href="/paths/apprenticeship/" class="path-card reveal">
+    <a href="/learn/apprentice/" class="path-card reveal">
       <div class="path-number" aria-hidden="true">03</div>
       <p class="path-tag">Year-Long Program</p>
       <h3 class="path-name">Rooted Apprenticeship</h3>
@@ -172,8 +172,8 @@ ogtitle: The Rooted Wisdom — A Living Herbal School
       <h2 class="retreat-title">New Orleans<br><em>Ancestral Excursion</em></h2>
       <p class="retreat-details"><strong>October 29 – November 1, 2026</strong> · Samhain · Día de los Muertos · Halloween · <strong>Limited Seats</strong></p>
       <div class="retreat-actions">
-        <a href="/retreats/new-orleans/" class="btn-white">Express Interest</a>
-        <a href="/retreats/new-orleans/" class="btn-white-ghost">Learn More</a>
+        <a href="/retreats/" class="btn-white">Express Interest</a>
+        <a href="/retreats/" class="btn-white-ghost">Learn More</a>
       </div>
     </div>
   </div>
@@ -210,7 +210,7 @@ ogtitle: The Rooted Wisdom — A Living Herbal School
         <li>Hands-on medicine making, formulation, and ritual preparation</li>
         <li>Live mentorship calls and community cohort</li>
       </ul>
-      <a href="/paths/apprenticeship/" class="btn-primary">Apply for Spring 2026</a>
+      <a href="/learn/apprentice/" class="btn-primary">Apply for Spring 2026</a>
     </div>
   </div>
 </section>
@@ -232,8 +232,8 @@ ogtitle: The Rooted Wisdom — A Living Herbal School
     <p class="community-attr">— Dara Pressley, The Sage</p>
     <p class="community-cta-label">Not ready for the full apprenticeship? Begin here.</p>
     <div class="community-ctas">
-      <a href="/paths/foundations/" class="btn-ghost">Foundations in Herbalism</a>
-      <a href="/learn/" class="btn-primary">Join the Community</a>
+      <a href="/learn/foundations/" class="btn-ghost">Foundations in Herbalism</a>
+      <a href="/learn/community" class="btn-primary">Join the Community</a>
     </div>
   </div>
 </section>
@@ -244,10 +244,10 @@ ogtitle: The Rooted Wisdom — A Living Herbal School
     <span class="press-label">As Seen In</span>
     <div class="press-logos">
       <a href="https://www.laweekly.com/the-rooted-wisdom-restoring-the-original-path-to-healing/" target="_blank" rel="noopener noreferrer">
-        <img src="https://framerusercontent.com/images/J7lFTysce2HvFEKReFMohofppE4.png" alt="LA Weekly" height="26" />
+        <img src="/assets/img/laweekly.png" alt="LA Weekly" height="26" />
       </a>
       <a href="https://www.usatoday.com/story/special/contributor-content/2025/08/21/the-rooted-wisdom-expands-its-apprenticeship-program-to-meet-individuals-at-every-stage-of-their-her/85761591007/" target="_blank" rel="noopener noreferrer">
-        <img src="https://framerusercontent.com/images/4O2I42ujQSUiabZqUicJcTGvjM.png" alt="USA Today" height="26" />
+        <img src="/assets/img/usatoday.png" alt="USA Today" height="26" />
       </a>
     </div>
   </div>

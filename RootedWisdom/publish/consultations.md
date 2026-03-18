@@ -17,7 +17,7 @@ status: published
 <p>Every body carries a story. Every imbalance holds a message. A consultation is a sacred conversation &mdash; one that honors all of who you are and opens a path forward with the plants as guides.</p>
 <div class="page-hero__actions">
 <a href="https://calendar.app.google/DYGgcWSr3imPUYgP8" class="btn btn--primary" target="_blank" rel="noopener">Book a Session</a>
-<a href="mailto:BeHerbal@therootedwisdom.com" class="btn btn--ghost">Ask a Question</a>
+<a href="/contact/" class="btn btn--ghost">Ask a Question</a>
 </div>
 </div>
 </div>
@@ -101,7 +101,7 @@ status: published
 <p>Sessions are held virtually via video call. New clients begin with an Initial Consultation to establish your full health and wellness picture.</p>
 <div class="booking__actions">
 <a href="https://calendar.app.google/DYGgcWSr3imPUYgP8" class="btn-white" target="_blank" rel="noopener">Schedule Your Consultation</a>
-<a href="mailto:BeHerbal@therootedwisdom.com" class="btn-outline-white">Questions First</a>
+<a href="/contact/" class="btn-outline-white">Questions First</a>
 </div>
 </div>
 <div class="booking__detail">
@@ -109,15 +109,15 @@ status: published
 <div class="booking__rates">
 <div class="booking__rate">
 <span class="booking__rate-name">Initial Consultation (90 min)</span>
-<span class="booking__rate-price">Contact for pricing</span>
+<span class="booking__rate-price">$250</span>
 </div>
 <div class="booking__rate">
 <span class="booking__rate-name">Follow-Up Session (60 min)</span>
-<span class="booking__rate-price">Contact for pricing</span>
+<span class="booking__rate-price">$200</span>
 </div>
 <div class="booking__rate">
 <span class="booking__rate-name">Seasonal Check-In (30 min)</span>
-<span class="booking__rate-price">Contact for pricing</span>
+<span class="booking__rate-price">$150</span>
 </div>
 </div>
 <p style="font-size: 0.75rem; color: rgba(255,255,255,0.5); max-width: none;">Sliding scale available. Reach out if cost is a barrier.</p>
@@ -133,7 +133,7 @@ status: published
 <p>Consultations are one thread in a larger tapestry. Here is where else the work lives.</p>
 </div>
 <div class="other-grid">
-<a href="/community/" class="other-card">
+<a href="/learn/community/" class="other-card">
 <span class="other-card__label">Community</span>
 <p class="other-card__title">The Rooted Community</p>
 <p class="other-card__body">Seasonal gatherings, live virtual workshops, herbal monographs, and a space to learn alongside others walking the same path.</p>
@@ -145,7 +145,7 @@ status: published
 <p class="other-card__body">Focused, hands-on learning on specific herbs, practices, and seasonal themes. Open to all levels.</p>
 <span class="other-card__arrow">See upcoming &rarr;</span>
 </a>
-<a href="/apprenticeship/" class="other-card">
+<a href="/learn/apprentice/" class="other-card">
 <span class="other-card__label">Year-Long Program</span>
 <p class="other-card__title">The Apprenticeship</p>
 <p class="other-card__body">A deep, structured immersion into ancestral herbalism. The most transformative offering we have.</p>
