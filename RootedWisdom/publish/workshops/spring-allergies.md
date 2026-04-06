@@ -10,6 +10,7 @@ price: "$20"
 priceVip: "$35"
 tags:
   - workshop
+past: true
 pageStyles: |
   :root {
     --parchment:   #f0e6cc;

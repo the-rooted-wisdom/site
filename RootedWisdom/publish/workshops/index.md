@@ -108,12 +108,13 @@ pageStyles: |
 
   .ws-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(300px, 360px));
     gap: 2rem;
     max-width: 1100px;
     margin: 0 auto;
     position: relative;
     z-index: 2;
+    justify-content: center;
   }
 
   .ws-card {
@@ -324,8 +325,107 @@ pageStyles: |
   }
   .ws-nl-btn:hover { background: #d4a050; }
 
+  .ws-past-section {
+    padding: 4rem 2rem 6rem;
+    background: #f0e6cc;
+    position: relative;
+    overflow: hidden;
+  }
+  .ws-past-label {
+    font-size: 0.65rem;
+    font-weight: 500;
+    letter-spacing: 0.32em;
+    text-transform: uppercase;
+    color: #8a6040;
+    text-align: center;
+    margin-bottom: 0.6rem;
+    max-width: none;
+  }
+  .ws-past-title {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: clamp(1.6rem, 3vw, 2.4rem);
+    font-weight: 300;
+    color: #3b2010;
+    text-align: center;
+    margin-bottom: 3rem;
+    max-width: none;
+  }
+  .ws-past-title em { font-style: italic; color: #b5601a; }
+  .ws-past-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 340px));
+    gap: 1.5rem;
+    max-width: 1100px;
+    margin: 0 auto;
+    justify-content: center;
+  }
+  .ws-past-card {
+    background: #ecdbb8;
+    border: 1px solid rgba(59,32,16,0.08);
+    display: flex;
+    flex-direction: column;
+    text-decoration: none;
+    color: inherit;
+    transition: box-shadow 0.2s;
+  }
+  .ws-past-card:hover {
+    box-shadow: 0 4px 20px rgba(59,32,16,0.1);
+    color: inherit;
+  }
+  .ws-past-card-header {
+    background: rgba(59,32,16,0.06);
+    padding: 1.5rem 1.75rem;
+    border-bottom: 1px solid rgba(59,32,16,0.08);
+  }
+  .ws-past-card-date {
+    font-size: 0.6rem;
+    font-weight: 500;
+    letter-spacing: 0.25em;
+    text-transform: uppercase;
+    color: #8a6040;
+    margin-bottom: 0.5rem;
+    max-width: none;
+  }
+  .ws-past-card-title {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 1.3rem;
+    font-weight: 300;
+    line-height: 1.2;
+    color: #3b2010;
+    max-width: none;
+  }
+  .ws-past-card-body {
+    padding: 1.25rem 1.75rem 1.5rem;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 1rem;
+  }
+  .ws-past-card-desc {
+    font-size: 0.85rem;
+    font-weight: 300;
+    line-height: 1.75;
+    color: #5a3a20;
+    max-width: none;
+  }
+  .ws-past-card-cta {
+    font-size: 0.65rem;
+    font-weight: 500;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    color: #b5601a;
+    display: flex;
+    align-items: center;
+    gap: 0.4rem;
+    max-width: none;
+  }
+  .ws-past-card-cta::after { content: '→'; font-size: 0.9rem; transition: transform 0.2s; }
+  .ws-past-card:hover .ws-past-card-cta::after { transform: translateX(3px); }
+
   @media (max-width: 640px) {
     .ws-grid { grid-template-columns: 1fr; }
+    .ws-past-grid { grid-template-columns: 1fr; }
     .ws-nl-inner { flex-direction: column; align-items: flex-start; }
   }
 ---
@@ -344,8 +444,10 @@ pageStyles: |
 <section class="ws-grid-section">
 <div class="ws-grid-pool"></div>
 <div class="ws-grid">
-{% if collections.workshops and collections.workshops.length > 0 %}
-{% for workshop in collections.workshops %}
+{% set upcomingWorkshops = [] %}
+{% for workshop in collections.workshops %}{% if not workshop.data.past %}{% set upcomingWorkshops = (upcomingWorkshops.push(workshop), upcomingWorkshops) %}{% endif %}{% endfor %}
+{% if upcomingWorkshops and upcomingWorkshops.length > 0 %}
+{% for workshop in upcomingWorkshops %}
 <a href="{{ workshop.url }}" class="ws-card">
 <div class="ws-card-header">
 <div class="ws-card-header-pool"></div>
@@ -372,6 +474,28 @@ pageStyles: |
 {% endif %}
 </div>
 </section>
+{% set pastWorkshops = [] %}
+{% for workshop in collections.workshops %}{% if workshop.data.past %}{% set pastWorkshops = (pastWorkshops.push(workshop), pastWorkshops) %}{% endif %}{% endfor %}
+{% if pastWorkshops and pastWorkshops.length > 0 %}
+<section class="ws-past-section">
+<p class="ws-past-label">The Archive</p>
+<h2 class="ws-past-title">Past <em>Workshops</em></h2>
+<div class="ws-past-grid">
+{% for workshop in pastWorkshops %}
+<a href="{{ workshop.url }}" class="ws-past-card">
+<div class="ws-past-card-header">
+{% if workshop.data.eventDateDisplay %}<p class="ws-past-card-date">{{ workshop.data.eventDateDisplay }}</p>{% endif %}
+<p class="ws-past-card-title">{{ workshop.data.title }}</p>
+</div>
+<div class="ws-past-card-body">
+<p class="ws-past-card-desc">{{ workshop.data.description }}</p>
+<span class="ws-past-card-cta">View replay</span>
+</div>
+</a>
+{% endfor %}
+</div>
+</section>
+{% endif %}
 <div class="ws-nl-bar">
 <div class="ws-nl-inner">
 <div class="ws-nl-copy">

@@ -6,6 +6,7 @@ module.exports = function(eleventyConfig) {
 
   // Pass through static assets
   eleventyConfig.addPassthroughCopy("assets");
+  eleventyConfig.addPassthroughCopy("RootedWisdom/publish/imgs");
 
   // Don't use .gitignore to exclude files
   eleventyConfig.setUseGitIgnore(false);
