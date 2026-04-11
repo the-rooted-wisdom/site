@@ -396,8 +396,8 @@ pageStyles: |
 <div class="reveal">
 <div class="appr-specs">
 <div class="appr-spec-row">
-<span class="appr-spec-label">Start Date</span>
-<span class="appr-spec-value">April 26th</span>
+<span class="appr-spec-label">Next Start Date</span>
+<span class="appr-spec-value">May 3rd</span>
 </div>
 <div class="appr-spec-row">
 <span class="appr-spec-label">Year 1</span>
