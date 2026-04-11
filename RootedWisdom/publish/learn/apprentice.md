@@ -462,7 +462,7 @@ Lifetime access to The Rooted Wisdom Community
 <div class="appr-tuition-alt">
 <div class="appr-tuition-alt-row">
 <span>Payment plan</span>
-<span class="appr-value">8 &times; $750 / month</span>
+<span class="appr-value">$500 / month</span>
 </div>
 </div>
 <p class="appr-tuition-discount">A discount is available for payment in full. Year 2 tuition discussed upon invitation.</p>
