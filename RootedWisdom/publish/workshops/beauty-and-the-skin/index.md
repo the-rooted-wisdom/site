@@ -457,7 +457,7 @@ pageStyles: |
 </div>
 <p class="bats-presenters">Dara Pressley · Julie Moody-Freeman · Ericka Mabrie</p>
 <div class="bats-meta-row">
-<span class="bats-meta-item">Saturday, April 19, 2026</span>
+<span class="bats-meta-item">Sunday, April 19, 2026</span>
 <div class="bats-meta-dot"></div>
 <span class="bats-meta-item">12pm PT</span>
 <div class="bats-meta-dot"></div>
