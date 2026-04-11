@@ -572,7 +572,7 @@ pageStyles: |
 <div class="bats-reg-hd-content">
 <p class="bats-reg-eyebrow">Register · April 19, 2026</p>
 <p class="bats-reg-title">Beauty and<br><em>the Skin</em></p>
-<p class="bats-reg-meta">Sunday · 12pm PT · Virtual</p>
+<p class="bats-reg-meta"> · 12pm PT · Virtual</p>
 </div>
 </div>
 <div class="bats-tiers">
