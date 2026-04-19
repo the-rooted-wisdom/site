@@ -34,10 +34,7 @@ pageStyles: |
     to   { opacity: 1; transform: scale(1) translateX(0); }
   }
 
-  .appear {
-    animation: appear 2s cubic-bezier(0.44,0,0.56,1) both;
-  }
-
+  .appear { animation: appear 2s cubic-bezier(0.44,0,0.56,1) both; }
   .appear-d1 { animation-delay: 0.15s; }
   .appear-d2 { animation-delay: 0.3s; }
   .appear-d3 { animation-delay: 0.45s; }
@@ -53,7 +50,7 @@ pageStyles: |
     align-items: center;
     justify-content: center;
     text-align: center;
-    padding: 5rem 2rem;
+    padding: 5rem 2rem 6rem;
     overflow: hidden;
   }
 
@@ -122,10 +119,7 @@ pageStyles: |
     max-width: none;
   }
 
-  .hero h1 em {
-    font-style: italic;
-    color: var(--gold-light);
-  }
+  .hero h1 em { font-style: italic; color: var(--gold-light); }
 
   .hero-date {
     margin-top: 2rem;
@@ -173,6 +167,23 @@ pageStyles: |
     flex-wrap: wrap;
   }
 
+  .scroll-indicator {
+    position: absolute;
+    bottom: 2.5rem;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 2;
+    color: var(--gold);
+    opacity: 0.45;
+    font-size: 1.3rem;
+    animation: bounce 2s ease-in-out infinite;
+  }
+
+  @keyframes bounce {
+    0%, 100% { transform: translateX(-50%) translateY(0); }
+    50%       { transform: translateX(-50%) translateY(8px); }
+  }
+
   /* ─── BUTTONS ─── */
   .btn-primary {
     display: inline-block;
@@ -207,10 +218,85 @@ pageStyles: |
     transition: border-color 0.25s, color 0.25s, transform 0.2s;
   }
 
-  .btn-outline:hover {
-    border-color: var(--gold-light);
+  .btn-outline:hover { border-color: var(--gold-light); color: var(--cream); transform: translateY(-2px); }
+
+  .btn-sm { font-size: 0.75rem; padding: 0.75rem 1.6rem; }
+
+  /* ─── EARLY BIRD CALLOUT ─── */
+  .early-bird {
+    padding: 0 2rem;
+    background: #0d0a06;
+  }
+
+  .early-bird-inner {
+    max-width: 980px;
+    margin: 0 auto;
+    border: 1px solid rgba(184,147,62,0.4);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 2rem;
+    padding: 1.4rem 2.5rem;
+    background: rgba(184,147,62,0.05);
+    flex-wrap: wrap;
+  }
+
+  .early-bird-left {
+    display: flex;
+    align-items: center;
+    gap: 1.25rem;
+  }
+
+  .early-bird-pip {
+    width: 7px;
+    height: 7px;
+    border-radius: 50%;
+    background: var(--gold);
+    flex-shrink: 0;
+    animation: pip-pulse 2s ease-in-out infinite;
+  }
+
+  @keyframes pip-pulse {
+    0%, 100% { opacity: 1; transform: scale(1); }
+    50%       { opacity: 0.4; transform: scale(0.65); }
+  }
+
+  .early-bird-label {
+    font-size: 0.7rem;
+    font-weight: 500;
+    letter-spacing: 0.3em;
+    text-transform: uppercase;
+    color: var(--gold);
+    max-width: none;
+  }
+
+  .early-bird-text {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 1.1rem;
     color: var(--cream);
-    transform: translateY(-2px);
+    max-width: none;
+  }
+
+  .early-bird-text em { font-style: italic; color: var(--gold-light); }
+
+  .early-bird-deadline {
+    font-size: 0.78rem;
+    font-weight: 300;
+    letter-spacing: 0.1em;
+    color: rgba(245,240,232,0.45);
+    text-align: right;
+    flex-shrink: 0;
+    max-width: none;
+  }
+
+  .early-bird-deadline strong {
+    display: block;
+    font-weight: 500;
+    color: var(--gold-light);
+    font-size: 0.88rem;
+    letter-spacing: 0.14em;
+    margin-bottom: 0.15rem;
+    max-width: none;
   }
 
   /* ─── DIVIDER ─── */
@@ -225,24 +311,14 @@ pageStyles: |
 
   .divider span { flex: 1; height: 1px; background: var(--gold); }
 
-  .divider-leaf {
-    font-family: 'Cormorant Garamond', serif;
-    font-size: 1.2rem;
-    color: var(--gold);
-  }
+  .divider-leaf { font-family: 'Cormorant Garamond', serif; font-size: 1.2rem; color: var(--gold); }
 
   /* ─── SECTIONS ─── */
   section { padding: 6rem 2rem; }
 
-  .container {
-    max-width: 980px;
-    margin: 0 auto;
-  }
+  .container { max-width: 980px; margin: 0 auto; }
 
-  .container-narrow {
-    max-width: 640px;
-    margin: 0 auto;
-  }
+  .container-narrow { max-width: 640px; margin: 0 auto; }
 
   .section-label {
     font-size: 0.72rem;
@@ -267,10 +343,7 @@ pageStyles: |
     max-width: none;
   }
 
-  .section-title em {
-    font-style: italic;
-    color: var(--gold-light);
-  }
+  .section-title em { font-style: italic; color: var(--gold-light); }
 
   .body-text {
     font-size: 1.05rem;
@@ -282,11 +355,8 @@ pageStyles: |
   }
 
   /* ─── CONVERGENCE ─── */
-  .convergence {
-    background: linear-gradient(180deg, #0d0a06 0%, #141008 100%);
-  }
+  .convergence { background: linear-gradient(180deg, #0d0a06 0%, #141008 100%); }
 
-  /* ─── CONVERGENCE CARDS ─── */
   .conv-cards {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -301,10 +371,7 @@ pageStyles: |
     transition: border-color 0.3s, background 0.3s;
   }
 
-  .conv-card:hover {
-    border-color: rgba(184,147,62,0.28);
-    background: rgba(184,147,62,0.07);
-  }
+  .conv-card:hover { border-color: rgba(184,147,62,0.28); background: rgba(184,147,62,0.07); }
 
   .conv-card-label {
     font-size: 0.7rem;
@@ -345,10 +412,7 @@ pageStyles: |
     align-items: start;
   }
 
-  .detail-block {
-    border-left: 2px solid rgba(184,147,62,0.3);
-    padding-left: 1.75rem;
-  }
+  .detail-block { border-left: 2px solid rgba(184,147,62,0.3); padding-left: 1.75rem; }
 
   .detail-block h3 {
     font-family: 'Cormorant Garamond', serif;
@@ -368,10 +432,160 @@ pageStyles: |
     max-width: none;
   }
 
-  /* ─── HOSTS ─── */
-  .hosts-section {
-    background: linear-gradient(180deg, #100d08 0%, #0a0806 100%);
+  /* ─── PRICING ─── */
+  .pricing-section { background: linear-gradient(180deg, #0a0806 0%, #0f0c08 100%); }
+
+  .pricing-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1.5rem;
+    margin-top: 4rem;
+    align-items: start;
   }
+
+  .pricing-card {
+    padding: 3rem 2.5rem;
+    border: 1px solid rgba(184,147,62,0.15);
+    background: rgba(184,147,62,0.03);
+    position: relative;
+  }
+
+  .pricing-card.vip {
+    border-color: rgba(184,147,62,0.45);
+    background: rgba(184,147,62,0.07);
+  }
+
+  .pricing-card.vip::before {
+    content: 'VIP';
+    position: absolute;
+    top: -1px;
+    right: 2rem;
+    background: var(--gold);
+    color: var(--ink);
+    font-size: 0.65rem;
+    font-weight: 500;
+    letter-spacing: 0.22em;
+    padding: 0.3rem 0.9rem;
+  }
+
+  .pricing-tier {
+    font-size: 0.7rem;
+    font-weight: 500;
+    letter-spacing: 0.28em;
+    text-transform: uppercase;
+    color: var(--gold);
+    opacity: 0.8;
+    margin-bottom: 0.6rem;
+    max-width: none;
+  }
+
+  .pricing-name {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 2rem;
+    font-weight: 300;
+    color: var(--cream);
+    margin-bottom: 0.75rem;
+    max-width: none;
+  }
+
+  .pricing-amount {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 3.2rem;
+    font-weight: 300;
+    color: var(--gold-light);
+    line-height: 1;
+    margin-bottom: 0.4rem;
+    display: flex;
+    align-items: baseline;
+    gap: 1rem;
+    max-width: none;
+  }
+
+  .pricing-amount sup {
+    font-size: 1.4rem;
+    vertical-align: super;
+    color: var(--gold);
+    opacity: 0.8;
+  }
+
+  .pricing-amount .full-price {
+    font-size: 1.5rem;
+    color: rgba(245,240,232,0.3);
+    text-decoration: line-through;
+    text-decoration-color: rgba(245,240,232,0.2);
+  }
+
+  .pricing-amount .full-price sup {
+    font-size: 0.85rem;
+    color: rgba(245,240,232,0.3);
+    opacity: 1;
+  }
+
+  .pricing-savings {
+    font-size: 0.78rem;
+    font-weight: 300;
+    color: var(--sage);
+    font-style: italic;
+    margin-bottom: 0.5rem;
+    letter-spacing: 0.04em;
+    max-width: none;
+  }
+
+  .pricing-note {
+    font-size: 0.75rem;
+    font-weight: 300;
+    color: rgba(245,240,232,0.32);
+    letter-spacing: 0.06em;
+    font-style: italic;
+    margin-bottom: 1.75rem;
+    max-width: none;
+  }
+
+  .pricing-divider { height: 1px; background: rgba(184,147,62,0.15); margin-bottom: 1.75rem; }
+
+  .pricing-includes { list-style: none; margin-bottom: 2.5rem; }
+
+  .pricing-includes li {
+    font-size: 0.9rem;
+    font-weight: 300;
+    line-height: 1.6;
+    color: rgba(245,240,232,0.62);
+    padding: 0.55rem 0 0.55rem 1.4rem;
+    position: relative;
+    border-bottom: 1px solid rgba(184,147,62,0.07);
+    max-width: none;
+  }
+
+  .pricing-includes li:last-child { border-bottom: none; }
+
+  .pricing-includes li::before {
+    content: '✦';
+    position: absolute;
+    left: 0;
+    color: var(--gold);
+    opacity: 0.45;
+    font-size: 0.5rem;
+    top: 0.7rem;
+  }
+
+  .pricing-includes li.vip-item { color: rgba(212,175,106,0.85); }
+  .pricing-includes li.vip-item::before { opacity: 0.9; }
+
+  .pricing-cta { display: block; text-align: center; }
+
+  .pricing-footer-note {
+    text-align: center;
+    margin-top: 2.5rem;
+    font-size: 0.82rem;
+    font-weight: 300;
+    color: rgba(245,240,232,0.3);
+    letter-spacing: 0.06em;
+    font-style: italic;
+    max-width: none;
+  }
+
+  /* ─── HOSTS ─── */
+  .hosts-section { background: linear-gradient(180deg, #100d08 0%, #0a0806 100%); }
 
   .hosts-grid {
     display: grid;
@@ -388,10 +602,7 @@ pageStyles: |
     transition: border-color 0.3s, background 0.3s;
   }
 
-  .host-card:hover {
-    border-color: rgba(184,147,62,0.3);
-    background: rgba(184,147,62,0.06);
-  }
+  .host-card:hover { border-color: rgba(184,147,62,0.3); background: rgba(184,147,62,0.06); }
 
   .host-photo {
     width: 120px;
@@ -433,6 +644,56 @@ pageStyles: |
     max-width: none;
   }
 
+  /* ─── SWAG ─── */
+  .swag-section { background: #0a0806; }
+
+  .swag-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1rem;
+    margin: 3.5rem 0 3rem;
+  }
+
+  .swag-item {
+    border: 1px solid rgba(184,147,62,0.1);
+    background: rgba(184,147,62,0.03);
+    padding: 2rem 1rem 1.5rem;
+    text-align: center;
+    transition: border-color 0.3s, background 0.3s;
+  }
+
+  .swag-item:hover { border-color: rgba(184,147,62,0.28); background: rgba(184,147,62,0.06); }
+
+  .swag-icon { font-size: 2rem; margin-bottom: 0.75rem; opacity: 0.65; max-width: none; }
+
+  .swag-name {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 1.1rem;
+    font-weight: 400;
+    color: var(--cream);
+    margin-bottom: 0.3rem;
+    max-width: none;
+  }
+
+  .swag-note {
+    font-size: 0.76rem;
+    font-weight: 300;
+    color: rgba(245,240,232,0.38);
+    font-style: italic;
+    max-width: none;
+  }
+
+  .swag-cta { text-align: center; }
+
+  .swag-coming-soon {
+    font-size: 0.85rem;
+    font-weight: 300;
+    color: rgba(245,240,232,0.35);
+    font-style: italic;
+    letter-spacing: 0.06em;
+    max-width: none;
+  }
+
   /* ─── CTA SECTION ─── */
   .cta-section {
     background: linear-gradient(180deg, #0a0806 0%, #120a04 100%);
@@ -456,227 +717,49 @@ pageStyles: |
     max-width: none;
   }
 
-  /* ─── INTEREST OVERLAY ─── */
-  .overlay {
-    display: none;
-    position: fixed;
-    inset: 0;
-    z-index: 200;
-    background: rgba(10,8,6,0.88);
-    backdrop-filter: blur(10px);
-    align-items: center;
-    justify-content: center;
-    padding: 2rem;
-  }
-
-  .overlay.is-open {
-    display: flex;
-  }
-
-  .overlay-panel {
-    background: #1a110a;
-    border: 1px solid rgba(184,147,62,0.2);
-    max-width: 520px;
-    width: 100%;
-    padding: 3rem 2.5rem;
-    position: relative;
-  }
-
-  .overlay-close {
-    position: absolute;
-    top: 1.25rem;
-    right: 1.25rem;
-    background: none;
-    border: none;
-    color: rgba(245,240,232,0.4);
-    font-size: 1.4rem;
-    cursor: pointer;
-    line-height: 1;
-    transition: color 0.2s;
-    font-family: 'Jost', sans-serif;
-  }
-
-  .overlay-close:hover { color: var(--cream); }
-
-  .overlay-label {
-    font-size: 0.7rem;
-    font-weight: 500;
-    letter-spacing: 0.3em;
-    text-transform: uppercase;
-    color: var(--gold);
-    opacity: 0.75;
-    margin-bottom: 0.75rem;
-    max-width: none;
-  }
-
-  .overlay-title {
-    font-family: 'Cormorant Garamond', serif;
-    font-size: 2rem;
-    font-weight: 300;
-    line-height: 1.2;
-    color: var(--cream);
-    margin-bottom: 0.75rem;
-    max-width: none;
-  }
-
-  .overlay-title em {
-    font-style: italic;
-    color: var(--gold-light);
-  }
-
-  .overlay-desc {
-    font-size: 0.9rem;
-    font-weight: 300;
-    line-height: 1.75;
-    color: rgba(245,240,232,0.6);
-    margin-bottom: 2rem;
-    max-width: none;
-  }
-
-  .form-group {
-    margin-bottom: 1.25rem;
-  }
-
-  .form-group label {
-    display: block;
-    font-size: 0.72rem;
-    font-weight: 500;
-    letter-spacing: 0.2em;
-    text-transform: uppercase;
-    color: var(--gold);
-    opacity: 0.7;
-    margin-bottom: 0.5rem;
-  }
-
-  .form-group input {
-    width: 100%;
-    background: rgba(245,240,232,0.05);
-    border: 1px solid rgba(184,147,62,0.2);
-    color: var(--cream);
-    font-family: 'Jost', sans-serif;
-    font-size: 0.95rem;
-    font-weight: 300;
-    padding: 0.85rem 1rem;
-    outline: none;
-    transition: border-color 0.2s;
-    border-radius: 2px;
-  }
-
-  .form-group input:focus {
-    border-color: rgba(184,147,62,0.5);
-  }
-
-  .form-group input::placeholder {
-    color: rgba(245,240,232,0.25);
-  }
-
-  .form-submit {
-    width: 100%;
-    margin-top: 0.5rem;
-    padding: 1rem;
-    font-size: 0.82rem;
-    letter-spacing: 0.18em;
-  }
-
-  .form-fine {
-    margin-top: 1.25rem;
-    font-size: 0.78rem;
-    font-weight: 300;
-    color: rgba(245,240,232,0.3);
-    letter-spacing: 0.06em;
-    text-align: center;
-    max-width: none;
-  }
-
-  /* Success state */
-  .form-success {
-    display: none;
-    text-align: center;
-    padding: 2rem 0;
-  }
-
-  .form-success.is-visible { display: block; }
-  .overlay-form.is-hidden { display: none; }
-
-  .success-icon {
-    font-family: 'Cormorant Garamond', serif;
-    font-size: 3rem;
-    color: var(--gold-light);
-    margin-bottom: 1rem;
-  }
-
-  .success-title {
-    font-family: 'Cormorant Garamond', serif;
-    font-size: 1.75rem;
-    font-weight: 300;
-    color: var(--cream);
-    margin-bottom: 0.75rem;
-    max-width: none;
-  }
-
-  .success-body {
-    font-size: 0.9rem;
-    font-weight: 300;
-    line-height: 1.75;
-    color: rgba(245,240,232,0.6);
-    max-width: none;
-  }
-
   /* ─── RESPONSIVE ─── */
   @media (max-width: 768px) {
     .conv-cards { grid-template-columns: 1fr; }
     .details-grid { grid-template-columns: 1fr; }
+    .pricing-grid { grid-template-columns: 1fr; }
     .hosts-grid { grid-template-columns: 1fr; }
+    .swag-grid { grid-template-columns: repeat(2, 1fr); }
     section { padding: 4rem 1.5rem; }
-    .overlay-panel { padding: 2.5rem 1.5rem; }
+    .early-bird-inner { flex-direction: column; gap: 1rem; }
+    .early-bird-deadline { text-align: left; }
   }
 ---
-
-<!-- INTEREST OVERLAY -->
-<div class="overlay" id="interest-overlay" role="dialog" aria-modal="true" aria-label="Express Interest Form">
-<div class="overlay-panel">
-<button class="overlay-close" id="overlay-close" aria-label="Close">&times;</button>
-<div class="overlay-form" id="overlay-form">
-<p class="overlay-label">New Orleans · Oct 29 – Nov 1, 2026</p>
-<h2 class="overlay-title">Count Me <em>In</em></h2>
-<p class="overlay-desc">Spaces are limited and held with care. Share your details and we'll be in touch with everything you need to know.</p>
-<form id="interest-form" name="nola-retreat-interest" method="POST" data-netlify="true" netlify-honeypot="bot-field">
-<input type="hidden" name="form-name" value="nola-retreat-interest">
-<p class="form-group" style="display:none;"><label>Don't fill this out: <input name="bot-field"></label></p>
-<div class="form-group">
-<label for="interest-name">Your Name</label>
-<input type="text" id="interest-name" name="name" placeholder="Full name" autocomplete="name" required>
-</div>
-<div class="form-group">
-<label for="interest-email">Email Address</label>
-<input type="email" id="interest-email" name="email" placeholder="your@email.com" autocomplete="email" required>
-</div>
-<button type="submit" class="btn-primary form-submit" id="interest-submit">Express My Interest</button>
-<p class="form-fine">Your information is kept private and never shared.</p>
-</form>
-</div>
-<div class="form-success" id="form-success">
-<p class="success-icon">✦</p>
-<p class="success-title">You're on our list</p>
-<p class="success-body">We'll be in touch as details unfold. Thank you for saying yes to this journey.</p>
-</div>
-</div>
-</div>
 
 <!-- HERO -->
 <header class="hero">
 <div class="hero-bg"></div>
 <p class="retreat-tag appear">A Rooted Wisdom Retreat</p>
-<p class="ornament appear appear-d1">Save the Date</p>
+<p class="ornament appear appear-d1">Early Bird Now Open</p>
 <h1 class="appear appear-d2">An Ancestral<br><em>Excursion</em></h1>
 <p class="hero-date appear appear-d3">October 29 – November 1, 2026</p>
 <p class="hero-location appear appear-d3">New Orleans, Louisiana</p>
 <p class="hero-desc appear appear-d4">An intimate journey to one of the most ancestrally charged cities in the African diaspora — held at the convergence of Samhain, Día de los Muertos, and Halloween.</p>
 <div class="hero-cta-group appear appear-d5">
-<button class="btn-primary open-interest" aria-controls="interest-overlay">Express Interest</button>
+<a href="#pricing" class="btn-primary">Reserve Your Spot</a>
 <a href="#convergence" class="btn-outline">Learn More</a>
 </div>
+<p class="scroll-indicator">↓</p>
 </header>
+
+<!-- EARLY BIRD CALLOUT -->
+<div class="early-bird">
+<div class="early-bird-inner">
+<div class="early-bird-left">
+<div class="early-bird-pip"></div>
+<p class="early-bird-label">Early Bird</p>
+<p class="early-bird-text">Only <em>8 spots</em> available at this rate</p>
+</div>
+<div class="early-bird-deadline">
+<strong>May 30, 2026</strong>
+Pricing deadline
+</div>
+</div>
+</div>
 
 <!-- CONVERGENCE -->
 <section class="convergence" id="convergence">
@@ -689,12 +772,12 @@ pageStyles: |
 <div class="container" style="margin-top:3rem;">
 <div class="conv-cards">
 <div class="conv-card">
-<p class="conv-card-label">The Sacred Window</p>
-<p class="conv-card-title">A Convergence of Traditions</p>
+<p class="conv-card-label">When</p>
+<p class="conv-card-title">A Sacred Window</p>
 <p class="conv-card-body">Each year at the turn of October, something shifts. Samhain, Día de los Muertos, and Halloween arrive together — three distinct traditions, each holding its own way of remembering the dead. In that overlap, the veil thins and the ancestors draw near. This excursion is timed to that opening, intentionally.</p>
 </div>
 <div class="conv-card">
-<p class="conv-card-label">The Place</p>
+<p class="conv-card-label">Where</p>
 <p class="conv-card-title">New Orleans, Louisiana</p>
 <p class="conv-card-body">There is a reason we are going here. New Orleans is one of the most ancestrally alive cities in this diaspora — shaped by Vodou, Yoruba memory, creolized medicine, and centuries of resistance. The city itself is ceremony. We'll move through it as descendants, not tourists.</p>
 </div>
@@ -734,6 +817,52 @@ pageStyles: |
 </div>
 </section>
 
+<!-- PRICING -->
+<section class="pricing-section" id="pricing">
+<div class="container">
+<p class="section-label">Early Bird Pricing</p>
+<h2 class="section-title">Choose Your <em>Journey</em></h2>
+<p class="body-text">Early bird pricing is available through May 30, 2026 — or until all 8 spots are filled, whichever comes first.</p>
+<div class="pricing-grid">
+<div class="pricing-card">
+<p class="pricing-tier">General</p>
+<p class="pricing-name">The Excursion</p>
+<p class="pricing-amount"><sup>$</sup>595 &nbsp;<span class="full-price"><sup>$</sup>725</span></p>
+<p class="pricing-savings">You save $130 by registering before May 30</p>
+<p class="pricing-note">Early bird rate &nbsp;·&nbsp; After May 30: $725</p>
+<div class="pricing-divider"></div>
+<ul class="pricing-includes">
+<li>All group ceremonies and rituals</li>
+<li>Guided cultural immersions throughout New Orleans</li>
+<li>Plant medicine experiences and botanical walks</li>
+<li>Welcome Ceremony dinner</li>
+<li>Access to all scheduled programming Oct 29–Nov 1</li>
+</ul>
+<div class="pricing-cta">
+<a href="https://buy.stripe.com/3cI28r79FbnOeo11UF0480b" class="btn-outline btn-sm">Reserve My Spot</a>
+</div>
+</div>
+<div class="pricing-card vip">
+<p class="pricing-tier">VIP</p>
+<p class="pricing-name">The Full Immersion</p>
+<p class="pricing-amount"><sup>$</sup>950</p>
+<p class="pricing-note">All-inclusive VIP rate</p>
+<div class="pricing-divider"></div>
+<ul class="pricing-includes">
+<li>Everything in The Excursion</li>
+<li class="vip-item">A private consultation with your choice of guide: Dara, Julie, or Ericka — before or after the retreat</li>
+<li class="vip-item">Intimate shared meal with your guides</li>
+<li class="vip-item">Curated welcome gift rooted in the spirit of the journey</li>
+</ul>
+<div class="pricing-cta">
+<a href="https://buy.stripe.com/14A00j51x2RicfTeHr0480d" class="btn-primary btn-sm">Reserve My VIP Spot</a>
+</div>
+</div>
+</div>
+<p class="pricing-footer-note">Lodging and meals not included. Recommended accommodations will be shared upon registration.</p>
+</div>
+</section>
+
 <!-- GUIDES -->
 <section class="hosts-section">
 <div class="container">
@@ -762,6 +891,40 @@ pageStyles: |
 </div>
 </section>
 
+<!-- SWAG -->
+<section class="swag-section">
+<div class="container">
+<p class="section-label">Carry the Journey With You</p>
+<h2 class="section-title">The <em>Excursion Collection</em></h2>
+<p class="body-text" style="max-width:500px; margin:0 auto;">A small collection of pieces to mark the journey — available to order anytime through our group shop.</p>
+<div class="swag-grid">
+<div class="swag-item">
+<p class="swag-icon">👕</p>
+<p class="swag-name">T-Shirt</p>
+<p class="swag-note">Unisex · Multiple sizes</p>
+</div>
+<div class="swag-item">
+<p class="swag-icon">🎒</p>
+<p class="swag-name">Backpack</p>
+<p class="swag-note">Travel ready</p>
+</div>
+<div class="swag-item">
+<p class="swag-icon">🧢</p>
+<p class="swag-name">Hat</p>
+<p class="swag-note">Coming soon</p>
+</div>
+<div class="swag-item">
+<p class="swag-icon">🍶</p>
+<p class="swag-name">Water Bottle</p>
+<p class="swag-note">With lid</p>
+</div>
+</div>
+<div class="swag-cta">
+<p class="swag-coming-soon">The shop is coming soon — check back closer to the retreat date.</p>
+</div>
+</div>
+</section>
+
 <!-- CTA -->
 <section class="cta-section" id="interest">
 <div class="container-narrow">
@@ -772,77 +935,8 @@ pageStyles: |
 </div>
 <p class="date-badge" style="margin-top:3rem;">October 29 – November 1, 2026 &nbsp;·&nbsp; New Orleans</p>
 <h2 class="section-title">We'd Love to<br><em>Journey With You</em></h2>
-<p class="body-text">More details are on their way. Complete the interest form to receive updates first — and to help us hold space with intention.</p>
-<button class="btn-primary open-interest" aria-controls="interest-overlay" style="margin-top:2rem;">Count Me In</button>
+<p class="body-text">Early bird pricing closes May 30 — or when the 8 spots are filled. Once they're gone, they're gone.</p>
+<a href="#pricing" class="btn-primary" style="margin-top:2rem; display:inline-block;">Reserve Your Spot</a>
 <p style="margin-top:2rem; font-size:0.82rem; font-weight:300; color:rgba(245,240,232,0.35); letter-spacing:0.08em; max-width:none;">Spaces are limited and held with care.</p>
 </div>
 </section>
-
-<!-- Netlify build-time scanner — must be a real HTML form in the document -->
-<form name="nola-retreat-interest" netlify netlify-honeypot="bot-field" hidden>
-<input type="text" name="name">
-<input type="email" name="email">
-<input name="bot-field">
-</form>
-
-<!-- OVERLAY SCRIPT -->
-<script>
-(function() {
-  var overlay = document.getElementById('interest-overlay');
-  var closeBtn = document.getElementById('overlay-close');
-  var formWrap = document.getElementById('overlay-form');
-  var netlifyForm = document.getElementById('interest-form');
-  var success = document.getElementById('form-success');
-  var submitBtn = document.getElementById('interest-submit');
-
-  function openOverlay() {
-    overlay.classList.add('is-open');
-    document.body.style.overflow = 'hidden';
-    document.getElementById('interest-name').focus();
-  }
-
-  function closeOverlay() {
-    overlay.classList.remove('is-open');
-    document.body.style.overflow = '';
-  }
-
-  document.querySelectorAll('.open-interest').forEach(function(btn) {
-    btn.addEventListener('click', openOverlay);
-  });
-
-  closeBtn.addEventListener('click', closeOverlay);
-
-  overlay.addEventListener('click', function(e) {
-    if (e.target === overlay) closeOverlay();
-  });
-
-  document.addEventListener('keydown', function(e) {
-    if (e.key === 'Escape') closeOverlay();
-  });
-
-  netlifyForm.addEventListener('submit', function(e) {
-    e.preventDefault();
-
-    var name = document.getElementById('interest-name').value.trim();
-    var email = document.getElementById('interest-email').value.trim();
-    if (!name || !email) return;
-
-    submitBtn.textContent = 'Sending…';
-    submitBtn.disabled = true;
-
-    fetch('/', {
-      method: 'POST',
-      headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
-      body: new URLSearchParams(new FormData(netlifyForm)).toString()
-    })
-    .then(function() {
-      formWrap.classList.add('is-hidden');
-      success.classList.add('is-visible');
-    })
-    .catch(function() {
-      submitBtn.textContent = 'Something went wrong — try again';
-      submitBtn.disabled = false;
-    });
-  });
-})();
-</script>
