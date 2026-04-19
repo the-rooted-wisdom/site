@@ -839,7 +839,7 @@ Pricing deadline
 <li>Access to all scheduled programming Oct 29–Nov 1</li>
 </ul>
 <div class="pricing-cta">
-<a href="https://buy.stripe.com/3cI28r79FbnOeo11UF0480b" class="btn-outline btn-sm">Reserve My Spot</a>
+<a href="https://buy.stripe.com/3cI28r79FbnOeo11UF0480b" class="btn-outline btn-sm">Enroll Now</a>
 </div>
 </div>
 <div class="pricing-card vip">
@@ -855,7 +855,7 @@ Pricing deadline
 <li class="vip-item">Curated welcome gift rooted in the spirit of the journey</li>
 </ul>
 <div class="pricing-cta">
-<a href="https://buy.stripe.com/14A00j51x2RicfTeHr0480d" class="btn-primary btn-sm">Reserve My VIP Spot</a>
+<a href="https://buy.stripe.com/14A00j51x2RicfTeHr0480d" class="btn-primary btn-sm">Enroll Now</a>
 </div>
 </div>
 </div>
