@@ -717,7 +717,7 @@ pageStyles: |
           <li>Q&amp;A with Dara — 45 minutes</li>
           <li>Workshop recording — available for 30 days</li>
         </ul>
-        <a href="#stripe-regular" class="ws-btn">Join Workshop — $20</a>
+        <a href="https://buy.stripe.com/cNi6oHctZ63ugw9arb0480f" class="ws-btn">Join Workshop — $20</a>
       </div>
       <div class="pricing-card is-vip">
         <p class="pricing-tag">VIP</p>
@@ -812,40 +812,6 @@ pageStyles: |
         <p class="curriculum-text">Working intentionally — how to bring presence and purpose to the making process</p>
       </div>
     </div>
-  </div>
-</section>
-
-<section class="vip-section">
-  <div class="vip-pool-1"></div>
-  <div class="vip-pool-2"></div>
-  <div class="workshop-container" style="position: relative; z-index: 2;">
-    <p class="vip-label">VIP Experience</p>
-    <h2 class="vip-title">Become a VIP —<br><em>Get the full experience</em></h2>
-    <p class="vip-body">When you join as a VIP, you are not stepping into a single session — you are stepping into a whole month inside the Herb-Curious Community. Think of it as a taste of what it feels like to be rooted in this work long-term.</p>
-    <div class="vip-perks">
-      <div class="vip-perk">
-        <p class="vip-perk-icon">✦</p>
-        <p class="vip-perk-title">30 Days of Community</p>
-        <p class="vip-perk-body">A space where the learning continues, questions are welcome, and the next workshop is already waiting for you.</p>
-      </div>
-      <div class="vip-perk">
-        <p class="vip-perk-icon">✦</p>
-        <p class="vip-perk-title">Past Workshop Recordings</p>
-        <p class="vip-perk-body">Access recordings from previous sessions — deepen your learning beyond a single workshop.</p>
-      </div>
-      <div class="vip-perk">
-        <p class="vip-perk-icon">✦</p>
-        <p class="vip-perk-title">Materia Medica Library</p>
-        <p class="vip-perk-body">Resources, references, and herbal monographs to support your practice between sessions.</p>
-      </div>
-      <div class="vip-perk">
-        <p class="vip-perk-icon">✦</p>
-        <p class="vip-perk-title">Free Workshops</p>
-        <p class="vip-perk-body">Workshops are included when you stay as a community member — your learning compounds over time.</p>
-      </div>
-    </div>
-    <a href="#stripe-vip" class="btn-vip">Join as VIP — $35</a>
-    <p class="vip-fine">Your $35 ticket includes the full workshop plus 30 days in the Herb-Curious Community.</p>
   </div>
 </section>
 
