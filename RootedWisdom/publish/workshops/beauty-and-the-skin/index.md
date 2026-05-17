@@ -8,6 +8,7 @@ eventTime: "12:00 PM PT"
 eventFormat: Virtual
 price: "$20"
 priceVip: "$35"
+past: true
 tags:
   - workshop
 pageStyles: |
