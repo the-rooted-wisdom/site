@@ -730,7 +730,7 @@ pageStyles: |
           <li>Materia Medica library &amp; resources</li>
           <li>Free workshops included with membership</li>
         </ul>
-        <a href="#stripe-vip" class="ws-btn is-vip-btn">Join as VIP — $35</a>
+        <a href="https://buy.stripe.com/6oU3cvctZ77ycfT8j30480g" class="ws-btn is-vip-btn">Join as VIP — $35</a>
       </div>
     </div>
   </div>
