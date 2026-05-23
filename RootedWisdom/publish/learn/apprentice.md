@@ -462,13 +462,13 @@ Lifetime access to The Rooted Wisdom Community
 <div class="appr-tuition-alt">
 <div class="appr-tuition-alt-row">
 <span>Payment plan</span>
-<span class="appr-value">$500 / month</span>
+<span class="appr-value">8 payments of $750</span>
 </div>
 </div>
 <p class="appr-tuition-discount">A discount is available for payment in full. Year 2 tuition discussed upon invitation.</p>
 </div>
 <div class="appr-tuition-cta-wrap">
-<a href="https://therootedwisdom.com?msopen=/member/plans/na7svvjauc" class="btn-outline-light" style="display:block;text-align:center;">Sign up Now</a>
+<a href="https://the-rooted-wisdom-community.mn.co/landing/plans/1899178" class="btn-outline-light" style="display:block;text-align:center;">Sign up Now</a>
 <p class="appr-tuition-note">Applications are open. We encourage early applications — enrollment is limited.</p>
 </div>
 </div>
