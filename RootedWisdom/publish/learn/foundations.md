@@ -521,14 +521,14 @@ pageStyles: |
 <p class="fdn-pricing-tier">Monthly</p>
 <p class="fdn-pricing-amount"><sup>$</sup>100</p>
 <p class="fdn-pricing-period">per month &middot; cancel any time</p>
-<a href="https://therootedwisdom.com?msopen=/member/plans/m35cyuhrcz" class="fdn-pricing-cta fdn-cta-ghost">Enroll Monthly</a>
+<a href="https://the-rooted-wisdom-community.mn.co/landing/plans/1906809" class="fdn-pricing-cta fdn-cta-ghost">Enroll Monthly</a>
 </div>
 <div class="fdn-pricing-card featured">
 <div class="fdn-pricing-badge">Save 10%</div>
 <p class="fdn-pricing-tier">Annual</p>
 <p class="fdn-pricing-amount"><sup>$</sup>1,080</p>
 <p class="fdn-pricing-period">per year &middot; <span class="fdn-pricing-strikethrough">$1,200</span><span class="fdn-pricing-save">&nbsp;save $120</span></p>
-<a href="#" class="fdn-pricing-cta fdn-cta-fill">Enroll Annually</a>
+<a href="https://the-rooted-wisdom-community.mn.co/landing/plans/1906809" class="fdn-pricing-cta fdn-cta-fill">Enroll Annually</a>
 </div>
 </div>
 </div>
