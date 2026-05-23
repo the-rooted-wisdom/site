@@ -555,7 +555,7 @@ pageStyles: |
 <h2 class="pods-section-title">The focus stays on<br /><em>the work.</em></h2>
 <p class="pods-contribution-body">A minimal monthly contribution supports platform hosting, community management, and the administrative needs that keep us all in circle. Keeping the cost low is intentional—the work is the point.</p>
 <p class="pods-contribution-body">When you introduce new members to our wider community, you'll earn membership credits—a way of honoring your role in helping our circle expand.</p>
-<a href="#" class="btn-gold-fill" style="margin-top:0.5rem;">Join Practitioner Pods</a>
+<a href="https://the-rooted-wisdom-community.mn.co/landing/plans/1895990" class="btn-gold-fill" style="margin-top:0.5rem;">Join Practitioner Pods</a>
 </div>
 <div class="reveal">
 <div class="pods-price-cards">
@@ -588,7 +588,7 @@ pageStyles: |
 <p class="pods-cta-quote">Here, we gather in small circles, share the work of our hands and hearts, and walk beside others who speak your language.</p>
 <p class="pods-cta-note">Open to experienced spiritual herbalists. Small cohorts fill intentionally—when the circle is ready, it closes.</p>
 <div class="pods-cta-buttons">
-<a href="#" class="btn-primary">Join Practitioner Pods</a>
+<a href="https://the-rooted-wisdom-community.mn.co/landing/plans/1895990" class="btn-primary">Join Practitioner Pods</a>
 <a href="/learn" class="btn-ghost">View Apprenticeship</a>
 </div>
 </div>
