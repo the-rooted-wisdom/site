@@ -16,7 +16,7 @@ status: published
 <div class="page-hero__right">
 <p>Every body carries a story. Every imbalance holds a message. A consultation is a sacred conversation &mdash; one that honors all of who you are and opens a path forward with the plants as guides.</p>
 <div class="page-hero__actions">
-<a href="https://calendar.app.google/DYGgcWSr3imPUYgP8" class="btn btn--primary" target="_blank" rel="noopener">Book a Session</a>
+<a href="https://cal.com/therooted/initial-consultations" class="btn btn--primary" target="_blank" rel="noopener">Book a Session</a>
 <a href="/contact/" class="btn btn--ghost">Ask a Question</a>
 </div>
 </div>
@@ -100,7 +100,7 @@ status: published
 <h2>Book a <em>Session</em></h2>
 <p>Sessions are held virtually via video call. New clients begin with an Initial Consultation to establish your full health and wellness picture.</p>
 <div class="booking__actions">
-<a href="https://calendar.app.google/DYGgcWSr3imPUYgP8" class="btn-white" target="_blank" rel="noopener">Schedule Your Consultation</a>
+<a href="https://cal.com/therooted/initial-consultations" class="btn-white" target="_blank" rel="noopener">Schedule Your Consultation</a>
 <a href="/contact/" class="btn-outline-white">Questions First</a>
 </div>
 </div>
