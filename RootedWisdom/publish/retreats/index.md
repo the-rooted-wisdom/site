@@ -935,7 +935,7 @@ Pricing deadline
 </div>
 <p class="date-badge" style="margin-top:3rem;">October 29 – November 1, 2026 &nbsp;·&nbsp; New Orleans</p>
 <h2 class="section-title">We'd Love to<br><em>Journey With You</em></h2>
-<p class="body-text">Early bird pricing closes May 30 — or when the 8 spots are filled. Once they're gone, they're gone.</p>
+<p class="body-text">Early bird pricing closes June 30 — or when the 8 spots are filled. Once they're gone, they're gone.</p>
 <a href="#pricing" class="btn-primary" style="margin-top:2rem; display:inline-block;">Reserve Your Spot</a>
 <p style="margin-top:2rem; font-size:0.82rem; font-weight:300; color:rgba(245,240,232,0.35); letter-spacing:0.08em; max-width:none;">Spaces are limited and held with care.</p>
 </div>
