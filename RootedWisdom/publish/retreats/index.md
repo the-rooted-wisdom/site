@@ -822,7 +822,7 @@ Pricing deadline
 <div class="container">
 <p class="section-label">Early Bird Pricing</p>
 <h2 class="section-title">Choose Your <em>Journey</em></h2>
-<p class="body-text">Early bird pricing is available through May 30, 2026 — or until all 8 spots are filled, whichever comes first.</p>
+<p class="body-text">Early bird pricing is available through June 30, 2026 — or until all 8 spots are filled, whichever comes first.</p>
 <div class="pricing-grid">
 <div class="pricing-card">
 <p class="pricing-tier">General</p>
