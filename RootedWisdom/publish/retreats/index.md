@@ -755,7 +755,7 @@ pageStyles: |
 <p class="early-bird-text">Only <em>8 spots</em> available at this rate</p>
 </div>
 <div class="early-bird-deadline">
-<strong>May 30, 2026</strong>
+<strong>June 30, 2026</strong>
 Pricing deadline
 </div>
 </div>
@@ -828,8 +828,8 @@ Pricing deadline
 <p class="pricing-tier">General</p>
 <p class="pricing-name">The Excursion</p>
 <p class="pricing-amount"><sup>$</sup>595 &nbsp;<span class="full-price"><sup>$</sup>725</span></p>
-<p class="pricing-savings">You save $130 by registering before May 30</p>
-<p class="pricing-note">Early bird rate &nbsp;·&nbsp; After May 30: $725</p>
+<p class="pricing-savings">You save $130 by registering before June 30</p>
+<p class="pricing-note">Early bird rate &nbsp;·&nbsp; After June 30: $725</p>
 <div class="pricing-divider"></div>
 <ul class="pricing-includes">
 <li>All group ceremonies and rituals</li>
