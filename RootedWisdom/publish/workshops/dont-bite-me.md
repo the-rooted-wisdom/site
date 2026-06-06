@@ -676,7 +676,7 @@ pageStyles: |
         <p class="pricing-includes">Includes</p>
         <ul class="pricing-features">
           <li>Live virtual workshop — full 1h 45m session</li>
-          <li>Pre-workshop handout with supply list and reference notes</li>
+          <li>Post-workshop handout — yours to keep</li>
           <li>Q&amp;A with Dara — 45 minutes</li>
           <li>Workshop recording — available for 30 days</li>
         </ul>
@@ -789,8 +789,8 @@ pageStyles: |
     </div>
     <div>
       <p class="handout-label">Included with Every Ticket</p>
-      <p class="handout-heading">Pre-Workshop Handout</p>
-      <p class="handout-body">All registered participants receive a pre-workshop handout with the supply list and quick-reference notes for what we'll be covering. Gather your materials beforehand and follow along live — or simply watch and learn. Both are complete.</p>
+      <p class="handout-heading">Post-Workshop Handout</p>
+      <p class="handout-body">All registered participants receive a take-home handout after the live session — a reference for everything we covered, ready to use through the rest of the season.</p>
     </div>
   </div>
 </div>
