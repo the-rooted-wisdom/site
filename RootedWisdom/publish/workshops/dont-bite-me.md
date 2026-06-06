@@ -675,7 +675,7 @@ pageStyles: |
         <p class="pricing-price"><sup>$</sup>20</p>
         <p class="pricing-includes">Includes</p>
         <ul class="pricing-features">
-          <li>Live virtual workshop — full 1h 45m session</li>
+          <li>Live virtual workshop </li>
           <li>Post-workshop handout — yours to keep</li>
           <li>Q&amp;A with Dara — 45 minutes</li>
           <li>Workshop recording — available for 30 days</li>
