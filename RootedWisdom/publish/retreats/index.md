@@ -222,7 +222,7 @@ pageStyles: |
 
   .btn-sm { font-size: 0.75rem; padding: 0.75rem 1.6rem; }
 
-  /* ─── EARLY BIRD CALLOUT ─── */
+  /* ─── LIMITED SPACES CALLOUT ─── */
   .early-bird {
     padding: 0 2rem;
     background: #0d0a06;
@@ -234,7 +234,7 @@ pageStyles: |
     border: 1px solid rgba(184,147,62,0.4);
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: center;
     gap: 2rem;
     padding: 1.4rem 2.5rem;
     background: rgba(184,147,62,0.05);
@@ -734,7 +734,7 @@ pageStyles: |
 <header class="hero">
 <div class="hero-bg"></div>
 <p class="retreat-tag appear">A Rooted Wisdom Retreat</p>
-<p class="ornament appear appear-d1">Early Bird Now Open</p>
+<p class="ornament appear appear-d1">Registration Open</p>
 <h1 class="appear appear-d2">An Ancestral<br><em>Excursion</em></h1>
 <p class="hero-date appear appear-d3">October 29 – November 1, 2026</p>
 <p class="hero-location appear appear-d3">New Orleans, Louisiana</p>
@@ -746,17 +746,13 @@ pageStyles: |
 <p class="scroll-indicator">↓</p>
 </header>
 
-<!-- EARLY BIRD CALLOUT -->
+<!-- LIMITED SPACES CALLOUT -->
 <div class="early-bird">
 <div class="early-bird-inner">
 <div class="early-bird-left">
 <div class="early-bird-pip"></div>
-<p class="early-bird-label">Early Bird</p>
-<p class="early-bird-text">Only <em>8 spots</em> available at this rate</p>
-</div>
-<div class="early-bird-deadline">
-<strong>June 30, 2026</strong>
-Pricing deadline
+<p class="early-bird-label">Limited Spaces</p>
+<p class="early-bird-text">This is an <em>intimate gathering</em> — spaces are held with care</p>
 </div>
 </div>
 </div>
@@ -820,16 +816,15 @@ Pricing deadline
 <!-- PRICING -->
 <section class="pricing-section" id="pricing">
 <div class="container">
-<p class="section-label">Early Bird Pricing</p>
+<p class="section-label">The Investment</p>
 <h2 class="section-title">Choose Your <em>Journey</em></h2>
-<p class="body-text">Early bird pricing is available through June 30, 2026 — or until all 8 spots are filled, whichever comes first.</p>
+<p class="body-text">Two ways to journey with us — choose the one that meets you where you are.</p>
 <div class="pricing-grid">
 <div class="pricing-card">
 <p class="pricing-tier">General</p>
 <p class="pricing-name">The Excursion</p>
-<p class="pricing-amount"><sup>$</sup>595 &nbsp;<span class="full-price"><sup>$</sup>725</span></p>
-<p class="pricing-savings">You save $130 by registering before June 30</p>
-<p class="pricing-note">Early bird rate &nbsp;·&nbsp; After June 30: $725</p>
+<p class="pricing-amount"><sup>$</sup>725</p>
+<p class="pricing-note">The Excursion rate</p>
 <div class="pricing-divider"></div>
 <ul class="pricing-includes">
 <li>All group ceremonies and rituals</li>
@@ -935,7 +930,7 @@ Pricing deadline
 </div>
 <p class="date-badge" style="margin-top:3rem;">October 29 – November 1, 2026 &nbsp;·&nbsp; New Orleans</p>
 <h2 class="section-title">We'd Love to<br><em>Journey With You</em></h2>
-<p class="body-text">Early bird pricing closes June 30 — or when the 8 spots are filled. Once they're gone, they're gone.</p>
+<p class="body-text">This is an intimate gathering and spaces are limited. Once they're filled, they're gone.</p>
 <a href="#pricing" class="btn-primary" style="margin-top:2rem; display:inline-block;">Reserve Your Spot</a>
 <p style="margin-top:2rem; font-size:0.82rem; font-weight:300; color:rgba(245,240,232,0.35); letter-spacing:0.08em; max-width:none;">Spaces are limited and held with care.</p>
 </div>
